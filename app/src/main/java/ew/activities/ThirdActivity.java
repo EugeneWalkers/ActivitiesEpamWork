@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 /**
  * Created by user on 28.03.2018.
@@ -14,29 +13,18 @@ import android.widget.Toast;
 
 public class ThirdActivity extends AppCompatActivity {
 
-    final String TAG = "Activity One";
-    final String IMPORTANT_STRING = "important";
-    String importantString = "";
+    final String TAG = "Activity Three";
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_third);
-        if (savedInstanceState != null){
-            importantString = savedInstanceState.getString(IMPORTANT_STRING);
-        }
         Button next = findViewById(R.id.prevThree);
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(ThirdActivity.this, SecondActivity.class);
                 startActivity(intent);
-            }
-        });
-        Button show = findViewById(R.id.buttonThree);
-        show.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(ThirdActivity.this, importantString, Toast.LENGTH_SHORT).show();
+                finish();
             }
         });
     }

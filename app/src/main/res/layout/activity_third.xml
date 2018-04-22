@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:weightSum="4">
 
     <TextView
         android:layout_width="match_parent"
@@ -12,23 +13,11 @@
         android:textAlignment="center" />
 
     <Button
-        android:id="@+id/buttonThree"
-        android:text="@string/show_secret_text"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:textAlignment="center" />
-
-    <Button
         android:id="@+id/prevThree"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:text="@string/prev" />
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="7" />
 
 </LinearLayout>

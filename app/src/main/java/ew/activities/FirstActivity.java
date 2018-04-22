@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 public class FirstActivity extends AppCompatActivity {
 
@@ -24,13 +23,6 @@ public class FirstActivity extends AppCompatActivity {
                 Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
                 startActivity(intent);
                 finish();
-            }
-        });
-        Button show = findViewById(R.id.buttonOne);
-        show.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(FirstActivity.this, importantString, Toast.LENGTH_SHORT).show();
             }
         });
     }
