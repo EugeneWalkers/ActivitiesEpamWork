@@ -1,9 +1,8 @@
 <resources>
     <string name="app_name">Activities</string>
-    <string name="first_activity">This is the first Activity!</string>
+    <string name="first_activity">This is the first Activity</string>
     <string name="second_activity">This is the second activity!</string>
     <string name="third_activity">This is the third activity!</string>
     <string name="next">Next</string>
     <string name="prev">Prev</string>
-    <string name="check_box">Checked or not checked?</string>
 </resources>
